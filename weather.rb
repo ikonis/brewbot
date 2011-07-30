@@ -20,30 +20,4 @@ class Weather
     currentTemp=current[1].innerHTML
     currentHumidity=current[3].innerHTML
     m.reply "#{cityName}   Current Temp: #{currentTemp}   #{currentHumidity}
-
-    =begin
-    (doc/:forcast_information).each do |status|
-      first=true
-      (status/"*".each do |el|
-        if first
-          first=false
-        else
-          m.reply el.to_s
-        end
-      end
-    end
-    (doc/:current_conditions).each do |status|
-      first=true
-      (status/"*").each do |el|
-        if first
-          first=false
-        else
-          m.reply el.to_s
-          #m.reply "#{el}: #{status.at(el).innerHTML}"
-        end
-      end
-     end
-   end
-   =end
-
 end
